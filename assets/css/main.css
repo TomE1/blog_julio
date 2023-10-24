@@ -119,6 +119,14 @@ body.light-theme {
   display: none;
 }
 
+.d-grid {
+  display: grid;
+}
+
+.section {
+  padding-block: 5rem;
+}
+
 /* Header */
 
 .header {
@@ -200,12 +208,10 @@ body.light-theme {
 /* Header JavaScript Styles */
 
 .header.activated {
-  background-color: red;
+  background-color: #222;
   box-shadow: 0, 1px 0.5rem, var(--transparent-light-color);
 }
-.header.activated {
-  box-shadow: 0, 1px 0.5rem, var(--transparent-light-color);
-}
+
 .menu.activated {
   box-shadow: 1px, 1px 0.1rem, var(--transparent-light-color);
   opacity: 1;
@@ -295,6 +301,116 @@ body.light-theme {
 /* Form JavaScript styles */
 
 /* Featured articles */
+
+.featured-articles {
+  border: var(--borderGreen);
+  padding-block: 2rem;
+}
+
+.section-header-offset {
+  border: var(--borderOrange);
+  margin-top: 7.4rem;
+}
+
+.featured-articles-container,
+.featured-content {
+  border: var(--borderViolet);
+  gap: var(--gap);
+}
+
+.headline-banner {
+  border: var(--borderYellow);
+  background-color: var(--secondary-background-color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  font-size: var(--font-size-xsm);
+}
+
+.headline {
+  border: var(--borderOrange);
+  color: var(--light-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem;
+  height: 100%;
+}
+
+.headline span {
+  border: var(--borderYellow);
+  height: inherit;
+}
+
+.fancy-border {
+  border: var(--borderBlue);
+  position: relative;
+  overflow: hidden;
+}
+
+.fancy-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: var(--gradient-color);
+  background-size: 50% 100%;
+  z-index: 5;
+}
+
+.fancy-border span {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--secondary-background-color);
+}
+
+.article {
+  border: var(--borderIndigo);
+  position: relative;
+  min-height: var(--item-min-height-md);
+}
+
+.article-image {
+  border: var(--borderYellow);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s;
+}
+
+.article-category {
+  border: var(--borderOrange);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: var(--primary-background-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.article-data-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1.5rem;
+  background-color: var(--transparent-dark-color);
+  z-index: 10;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+
+.article:hover .article-data-container {
+  background-color: var(--hover-dark-color);
+  color: var(--hover-light-color);
+}
 
 /* Featured articles - Sidebar */
 
