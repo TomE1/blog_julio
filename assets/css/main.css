@@ -208,7 +208,7 @@ body.light-theme {
 /* Header JavaScript Styles */
 
 .header.activated {
-  background-color: #222;
+  background-color: red;
   box-shadow: 0, 1px 0.5rem, var(--transparent-light-color);
 }
 
@@ -410,6 +410,35 @@ body.light-theme {
 .article:hover .article-data-container {
   background-color: var(--hover-dark-color);
   color: var(--hover-light-color);
+}
+.article:hover .article-data-spacer {
+  background-color: var(--hover-light-color);
+}
+
+.article-data {
+  border: var(--borderYellow);
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  font-size: var(--font-size-xsm);
+  margin-bottom: 1rem;
+}
+
+.article-data-spacer {
+  border: var(--borderRed);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--light-color-alt);
+  transform: rotate(45deg);
+}
+
+.title {
+  border: var(--borderBlue);
+  color: var(--light-color);
+}
+
+.article-title{
+font-size: var(--font-size-md);
 }
 
 /* Featured articles - Sidebar */
