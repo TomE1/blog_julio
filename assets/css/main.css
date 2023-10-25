@@ -437,13 +437,78 @@ body.light-theme {
   color: var(--light-color);
 }
 
-.article-title{
-font-size: var(--font-size-md);
+.article-title {
+  font-size: var(--font-size-md);
 }
 
 /* Featured articles - Sidebar */
 
+.sidebar {
+  border: var(--borderYellow);
+  background-color: var(--secondary-background-color);
+  padding: 2.5rem;
+}
+
+.trending-news-box {
+  border: var(--borderRed);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding-block: 2rem;
+  border: 1px solid --transparent-light-color;
+}
+
+.trending-news-box:last-of-type {
+  border-bottom: none;
+}
+
+.trending-news-image-box {
+  position: relative;
+  width: 100%;
+  height: var(--item-min-height-sm);
+}
+
+.featured-content-title {
+  border: var(--borderYellow);
+  font-size: var(--font-size-md);
+  text-align: center;
+  padding: 1rem;
+}
+
+.trending-number {
+  border: var(--borderYellow);
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  z-index: 15;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--secondary-background-color);
+  color: var(--light-color);
+  border-radius: 50%;
+}
+
+.trending-news-data.article-title {
+  border: var(--borderViolet);
+  font-size: var(--font-size-sm);
+}
+
+.trending-news-box:hover.article-title{
+  color: var(--light-color-alt);
+}
+
+
+
+
+
 /* Quick read */
+
+
+
+
+
+
+
 
 /* Quick read - Swiper */
 
