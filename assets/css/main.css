@@ -921,10 +921,10 @@ body.light-theme {
       transform: translateX(-50%);
     }
   }
-
+/* 
   .featured-articles-container {
     grid-template-columns: 1fr 40rem;
-  }
+  } */
   .trending-news-image-box {
     width: 10rem;
     height: 10rem;
